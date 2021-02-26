@@ -18,7 +18,8 @@
 
 <script lang="ts">
 import { defineComponent, reactive, ref, toRaw, UnwrapRef } from 'vue';
-import { ValidateErrorEntity } from "ant-design-vue/es/form/interface"
+import { ValidateErrorEntity } from "ant-design-vue/es/form/interface";
+import { login } from "../api/user";
 
 interface FormModel {
   userName: string;
@@ -52,6 +53,9 @@ export default defineComponent({
         .validate()
         .then(() => {
           console.log('values', toRaw(formModel));
+          login(toRaw(formModel)).then(res => {
+            localStorage.setItem("TOKEN", res.data.token)
+          })
         })
         .catch((error: ValidateErrorEntity<FormModel>) => {
           console.log('error', error);
