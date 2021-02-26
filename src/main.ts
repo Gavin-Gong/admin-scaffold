@@ -1,15 +1,14 @@
 import { createApp } from 'vue'
-import Element from "element-plus"
-import 'element-plus/lib/theme-chalk/index.css';
+import Antd from "ant-design-vue"
+import 'ant-design-vue/dist/antd.css';
 
 import App from './App.vue'
 import router from "./router"
 import "./styles/index.scss"
 
 const app = createApp(App)
-app.use(Element, {
-  size: "small"
-})
+
+app.use(Antd)
 app.use(router)
 app.mount('#app')
 

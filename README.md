@@ -1,5 +1,26 @@
 # Vue 3 + Typescript + Vite
 
+## Roadmap
+
+- [ ] Login
+- [ ] Table
+- [ ] Dashboard
+- [ ] Settings
+- [ ] List
+- [ ] Form
+- [ ] Editor
+- [ ] i18n
+
+
+## Tool
+- [ ] tailwindcss in vscode
+
+
+
+
+
+
+
 This template should help get you started developing with Vue 3 and Typescript in Vite.
 
 ## Recommended IDE Setup
