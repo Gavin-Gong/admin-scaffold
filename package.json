@@ -7,7 +7,7 @@
     "serve": "vite preview",
     "prepare": "husky install",
     "lint:prettier": "prettier --check src/**/*.{scss,ts,vue}",
-    "fmt:prettier": "prettier --write src/**/*.{scss,ts,vue}"
+    "fmt": "prettier --write src/**/*.{scss,ts,vue}"
   },
   "dependencies": {
     "ant-design-vue": "^2.0.0",

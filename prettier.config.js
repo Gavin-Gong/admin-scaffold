@@ -1,17 +1,17 @@
 module.exports = {
-  printWidth: 150,
+  printWidth: 100,
   tabWidth: 2,
   useTabs: false,
-  semi: false, // 未尾逗号
+  semi: true,
   vueIndentScriptAndStyle: true,
-  singleQuote: false, // 单引号
-  quoteProps: 'as-needed',
+  singleQuote: false,
+  quoteProps: "as-needed",
   bracketSpacing: true,
-  trailingComma: 'none', // 未尾分号
-  arrowParens: 'always',
+  trailingComma: "none",
+  arrowParens: "always",
   insertPragma: false,
   requirePragma: false,
-  proseWrap: 'never',
-  htmlWhitespaceSensitivity: 'strict',
-  endOfLine: 'lf'
-}
+  proseWrap: "never",
+  htmlWhitespaceSensitivity: "strict",
+  endOfLine: "lf"
+};
