@@ -9,5 +9,4 @@ interface LoginResp {
   success: boolean;
   token: string;
 }
-export const login = (payload: LoginPayload) =>
-  http.post<LoginResp>("/user/login", payload);
+export const login = (payload: LoginPayload) => http.post<LoginResp>("/user/login", payload);
