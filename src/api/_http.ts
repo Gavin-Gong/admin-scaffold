@@ -22,4 +22,11 @@ http.defaults.adapter = (config) => {
   }
 };
 
+interface Resp<T = any> {
+  code: number;
+  success: boolean;
+  data: T;
+}
+
+export { Resp };
 export { http };

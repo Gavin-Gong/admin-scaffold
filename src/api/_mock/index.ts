@@ -1,8 +1,9 @@
 import user from "./user"
-
+import table from "./table"
 
 export default {
-  ...user
+  ...user,
+  ...table
 } as {
   [x: string]: () => {}
 }
