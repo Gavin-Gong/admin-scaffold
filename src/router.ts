@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router"
 import Login from "./views/Login.vue"
 import Public from "./views/Public.vue"
+import Table from "./views/Table/Table.vue"
 import NotFound from "./views/status/NotFound.vue"
 
 const routes: RouteRecordRaw[] = [
@@ -11,6 +12,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: "/login",
     component: Login
+  },
+  {
+    path: "/table",
+    component: Table
   },
   {
     path: "/:pathMatch(.*)*",
